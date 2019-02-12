@@ -21,4 +21,14 @@ class ConcertTest extends TestCase
 
         $this->assertEquals('December 1, 2016', $concert->formatted_date);
     }
+
+    /** @test */
+    function can_get_formatted_start_time()
+    {
+        $concert = factory(Concert::class)->create([
+            'date' => Carbon::parse('2016-12-01 17:00:00')
+        ]);
+
+        $this->assertEquals('5:00pm', $concert->formatted_start_time);
+    }
 }
