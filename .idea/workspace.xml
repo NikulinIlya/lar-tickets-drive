@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1206f0fb-dbaa-4008-a1d2-7d8d7e56c4c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/features/ViewConcertListingTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
+            <state>
               <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
               <folding>
                 <element signature="e#34#50#0#PHP" expanded="true" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="54" />
+            <state relative-caret-position="221">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#34#69#0#PHP" expanded="true" />
               </folding>
@@ -42,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="222">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
                 <element signature="e#34#69#0#PHP" expanded="true" />
@@ -64,21 +63,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Billing/PaymentFailedException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="104">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#40#71#0#PHP" expanded="true" />
+                <element signature="e#40#79#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,11 +119,11 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
         <option value="$PROJECT_DIR$/app/Concert.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
-        <option value="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" />
         <option value="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" />
         <option value="$PROJECT_DIR$/app/Billing/PaymentFailedException.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
+        <option value="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" />
       </list>
     </option>
   </component>
@@ -377,7 +367,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.PurchaseTicketsTest.an_order_is_not_created_if_payment_fails">
+  <component name="RunManager" selected="PHPUnit.PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert">
     <configuration name="FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\features\FakePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" method="charges_with_an_invalid_payment_token_fail" scope="Method" />
       <method v="2" />
@@ -386,16 +376,16 @@
       <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="an_order_is_not_created_if_payment_fails" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="cannot_purchase_tickets_to_an_unpublished_concert" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="customer_can_purchase_tickets_to_a_published_concert" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="PurchaseTicketsTest.payment_token_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="payment_token_is_required" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PurchaseTicketsTest.ticket_quantity_is_required_to_purchase_tickets" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="ticket_quantity_is_required_to_purchase_tickets" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PurchaseTicketsTest.ticket_quantity_must_be_at_least_1_to_purchase_tickets" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="ticket_quantity_must_be_at_least_1_to_purchase_tickets" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -404,11 +394,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert" />
+        <item itemvalue="PHPUnit.PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" />
         <item itemvalue="PHPUnit.PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" />
         <item itemvalue="PHPUnit.FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" />
         <item itemvalue="PHPUnit.PurchaseTicketsTest.payment_token_is_required" />
-        <item itemvalue="PHPUnit.PurchaseTicketsTest.ticket_quantity_must_be_at_least_1_to_purchase_tickets" />
-        <item itemvalue="PHPUnit.PurchaseTicketsTest.ticket_quantity_is_required_to_purchase_tickets" />
       </list>
     </recent_temporary>
   </component>
@@ -427,32 +417,11 @@
       <workItem from="1549970996044" duration="10609000" />
       <workItem from="1550063523876" duration="13699000" />
       <workItem from="1550151200578" duration="8715000" />
-      <workItem from="1550248330351" duration="1584000" />
+      <workItem from="1550248330351" duration="2876000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PurchaseTicketsTest_email_is_required_to_purchase_tickets - 2019.02.14 at 19h 55m 02s.xml">
-      <configuration name="PurchaseTicketsTest.email_is_required_to_purchase_tickets" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest_email_must_be_valid_to_purchase_tickets - 2019.02.14 at 19h 55m 36s.xml">
-      <configuration name="PurchaseTicketsTest.email_must_be_valid_to_purchase_tickets" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest_ticket_quantity_is_required_to_purchase_tickets - 2019.02.14 at 19h 55m 49s.xml">
-      <configuration name="PurchaseTicketsTest.ticket_quantity_is_required_to_purchase_tickets" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest_ticket_quantity_must_be_at_least_1_to_purchase_tickets - 2019.02.14 at 19h 55m 58s.xml">
-      <configuration name="PurchaseTicketsTest.ticket_quantity_must_be_at_least_1_to_purchase_tickets" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest_payment_token_is_required - 2019.02.14 at 19h 56m 09s.xml">
-      <configuration name="PurchaseTicketsTest.payment_token_is_required" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest - 2019.02.14 at 19h 56m 21s.xml">
-      <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PurchaseTicketsTest_email_is_required_to_purchase_tickets - 2019.02.14 at 20h 00m 23s.xml">
-      <configuration name="PurchaseTicketsTest.email_is_required_to_purchase_tickets" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="PurchaseTicketsTest - 2019.02.14 at 20h 01m 47s.xml">
       <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -462,9 +431,30 @@
     <history-entry file="PurchaseTicketsTest - 2019.02.14 at 20h 02m 30s.xml">
       <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="FakePaymentGatewayTest_charges_with_an_invalid_payment_token_fail - 2019.02.15 at 20h 06m 31s.xml">
+      <configuration name="FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FakePaymentGatewayTest_charges_with_a_valid_payment_token_are_successful - 2019.02.15 at 20h 07m 12s.xml">
+      <configuration name="FakePaymentGatewayTest.charges_with_a_valid_payment_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_an_order_is_not_created_if_payment_fails - 2019.02.15 at 20h 09m 21s.xml">
+      <configuration name="PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_an_order_is_not_created_if_payment_fails - 2019.02.15 at 20h 09m 51s.xml">
+      <configuration name="PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_to_an_unpublished_concert - 2019.02.15 at 20h 20m 40s.xml">
+      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_to_an_unpublished_concert - 2019.02.15 at 20h 26m 25s.xml">
+      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest - 2019.02.15 at 20h 28m 10s.xml">
+      <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43813000" />
+    <option name="totallyTimeSpent" value="45105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -662,30 +652,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/features/ViewConcertListingTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
+        <state>
           <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
           <folding>
             <element signature="e#34#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="54" />
-          <folding>
-            <element signature="e#34#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,8 +693,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="222">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#34#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#40#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="e#34#69#0#PHP" expanded="true" />
           </folding>
