@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1206f0fb-dbaa-4008-a1d2-7d8d7e56c4c0" name="Default Changelist" comment="">
+    <list default="true" id="1206f0fb-dbaa-4008-a1d2-7d8d7e56c4c0" name="Default Changelist" comment="feat(Concert): add relation to Ticket model, make functions addTickets and ticketsRemaining">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Concert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Concert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ticket.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,46 +18,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/features/ViewConcertListingTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
-              <folding>
-                <element signature="e#34#50#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="358">
+              <caret line="103" column="62" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="62" />
               <folding>
                 <element signature="e#34#69#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <element signature="e#34#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -65,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="306">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#40#79#0#PHP" expanded="true" />
@@ -77,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            <state relative-caret-position="-16">
+              <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
               <folding>
                 <element signature="e#30#46#0#PHP" expanded="true" />
               </folding>
@@ -89,8 +56,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Concert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            <state relative-caret-position="52">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#23#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Ticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Exceptions/NotEnoughTicketsException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -116,14 +113,16 @@
         <option value="$PROJECT_DIR$/app/Billing/PaymentGateway.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_13_191450_create_orders_table.php" />
         <option value="$PROJECT_DIR$/app/Order.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
-        <option value="$PROJECT_DIR$/app/Concert.php" />
         <option value="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" />
         <option value="$PROJECT_DIR$/app/Billing/PaymentFailedException.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
         <option value="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/NotEnoughTicketsException.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
+        <option value="$PROJECT_DIR$/app/Concert.php" />
+        <option value="$PROJECT_DIR$/app/Ticket.php" />
       </list>
     </option>
   </component>
@@ -245,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,6 +261,12 @@
               <item name="lar-tickets-drive" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Billing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lar-tickets-drive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lar-tickets-drive" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lar-tickets-drive" type="b2602c69:ProjectViewProjectNode" />
@@ -345,6 +349,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,25 +372,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert">
-    <configuration name="FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\FakePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" method="charges_with_an_invalid_payment_token_fail" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.ConcertTest.cannot_order_tickets_that_have_already_been_purchased">
+    <configuration name="ConcertTest.can_add_tickets" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="can_add_tickets" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="an_order_is_not_created_if_payment_fails" scope="Method" />
+    <configuration name="ConcertTest.cannot_order_tickets_that_have_already_been_purchased" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="cannot_order_tickets_that_have_already_been_purchased" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="cannot_purchase_tickets_to_an_unpublished_concert" scope="Method" />
+    <configuration name="ConcertTest.tickets_remaining_does_not_include_tickets_associated_with_an_order" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="tickets_remaining_does_not_include_tickets_associated_with_an_order" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ConcertTest.trying_to_purchase_more_tickets_than_remain_throws_an_exception" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="trying_to_purchase_more_tickets_than_remain_throws_an_exception" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="customer_can_purchase_tickets_to_a_published_concert" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PurchaseTicketsTest.payment_token_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\features\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php" method="payment_token_is_required" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -394,11 +399,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ConcertTest.cannot_order_tickets_that_have_already_been_purchased" />
+        <item itemvalue="PHPUnit.ConcertTest.trying_to_purchase_more_tickets_than_remain_throws_an_exception" />
+        <item itemvalue="PHPUnit.ConcertTest.tickets_remaining_does_not_include_tickets_associated_with_an_order" />
+        <item itemvalue="PHPUnit.ConcertTest.can_add_tickets" />
         <item itemvalue="PHPUnit.PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert" />
-        <item itemvalue="PHPUnit.PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" />
-        <item itemvalue="PHPUnit.PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" />
-        <item itemvalue="PHPUnit.FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" />
-        <item itemvalue="PHPUnit.PurchaseTicketsTest.payment_token_is_required" />
       </list>
     </recent_temporary>
   </component>
@@ -417,62 +422,109 @@
       <workItem from="1549970996044" duration="10609000" />
       <workItem from="1550063523876" duration="13699000" />
       <workItem from="1550151200578" duration="8715000" />
-      <workItem from="1550248330351" duration="2876000" />
+      <workItem from="1550248330351" duration="4283000" />
+      <workItem from="1550338835745" duration="8139000" />
     </task>
+    <task id="LOCAL-00001" summary="test(ConcertTest): make tests that check if concert tickets can be ordered and tickets remaining does not include other">
+      <created>1550346778071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550346778071</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(tickets migration): add concert_id column and make order_id nullable">
+      <created>1550346855694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550346855694</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(Concert): add relation to Ticket model, make functions addTickets and ticketsRemaining">
+      <created>1550347958752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550347958752</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test(ConcertTest): make test that checks that trying to purchase more tickets than remain throws an exception">
+      <created>1550349181020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550349181020</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test(ConcertTest): make test that checks that cannot order tickets that have already been purchased">
+      <created>1550349642586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550349642586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PurchaseTicketsTest - 2019.02.14 at 20h 01m 47s.xml">
+    <history-entry file="PurchaseTicketsTest - 2019.02.15 at 20h 29m 47s.xml">
       <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest - 2019.02.14 at 20h 02m 11s.xml">
-      <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="PurchaseTicketsTest_customer_can_purchase_tickets_to_a_published_concert - 2019.02.15 at 20h 31m 17s.xml">
+      <configuration name="PurchaseTicketsTest.customer_can_purchase_tickets_to_a_published_concert" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest - 2019.02.14 at 20h 02m 30s.xml">
-      <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_can_add_tickets - 2019.02.16 at 22h 28m 17s.xml">
+      <configuration name="ConcertTest.can_add_tickets" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="FakePaymentGatewayTest_charges_with_an_invalid_payment_token_fail - 2019.02.15 at 20h 06m 31s.xml">
-      <configuration name="FakePaymentGatewayTest.charges_with_an_invalid_payment_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_can_add_tickets - 2019.02.16 at 22h 28m 23s.xml">
+      <configuration name="ConcertTest.can_add_tickets" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="FakePaymentGatewayTest_charges_with_a_valid_payment_token_are_successful - 2019.02.15 at 20h 07m 12s.xml">
-      <configuration name="FakePaymentGatewayTest.charges_with_a_valid_payment_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_tickets_remaining_does_not_include_tickets_associated_with_an_order - 2019.02.16 at 22h 44m 50s.xml">
+      <configuration name="ConcertTest.tickets_remaining_does_not_include_tickets_associated_with_an_order" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest_an_order_is_not_created_if_payment_fails - 2019.02.15 at 20h 09m 21s.xml">
-      <configuration name="PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.16 at 22h 46m 49s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest_an_order_is_not_created_if_payment_fails - 2019.02.15 at 20h 09m 51s.xml">
-      <configuration name="PurchaseTicketsTest.an_order_is_not_created_if_payment_fails" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_trying_to_purchase_more_tickets_than_remain_throws_an_exception - 2019.02.16 at 23h 17m 09s.xml">
+      <configuration name="ConcertTest.trying_to_purchase_more_tickets_than_remain_throws_an_exception" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_to_an_unpublished_concert - 2019.02.15 at 20h 20m 40s.xml">
-      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_trying_to_purchase_more_tickets_than_remain_throws_an_exception - 2019.02.16 at 23h 17m 19s.xml">
+      <configuration name="ConcertTest.trying_to_purchase_more_tickets_than_remain_throws_an_exception" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_to_an_unpublished_concert - 2019.02.15 at 20h 26m 25s.xml">
-      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_to_an_unpublished_concert" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_trying_to_purchase_more_tickets_than_remain_throws_an_exception - 2019.02.16 at 23h 17m 30s.xml">
+      <configuration name="ConcertTest.trying_to_purchase_more_tickets_than_remain_throws_an_exception" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="PurchaseTicketsTest - 2019.02.15 at 20h 28m 10s.xml">
-      <configuration name="PurchaseTicketsTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest_cannot_order_tickets_that_have_already_been_purchased - 2019.02.16 at 23h 38m 04s.xml">
+      <configuration name="ConcertTest.cannot_order_tickets_that_have_already_been_purchased" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45105000" />
+    <option name="totallyTimeSpent" value="54651000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31586403" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
@@ -524,6 +576,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test(ConcertTest): make tests that check if concert tickets can be ordered and tickets remaining does not include other" />
+    <MESSAGE value="feat(tickets migration): add concert_id column and make order_id nullable" />
+    <MESSAGE value="feat(Concert): add relation to Ticket model, make functions addTickets and ticketsRemaining" />
+    <MESSAGE value="test(ConcertTest): make test that checks that trying to purchase more tickets than remain throws an exception" />
+    <MESSAGE value="test(ConcertTest): make test that checks that cannot order tickets that have already been purchased" />
+    <option name="LAST_COMMIT_MESSAGE" value="test(ConcertTest): make test that checks that cannot order tickets that have already been purchased" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/ide-helper.php">
@@ -617,16 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -650,33 +700,6 @@
     <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/features/ViewConcertListingTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
-          <folding>
-            <element signature="e#34#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-          <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Concert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Billing/PaymentFailedException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -684,16 +707,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
+    <entry file="file://$PROJECT_DIR$/tests/features/ViewConcertListingTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="816">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <element signature="e#34#50#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="408">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="e#34#69#0#PHP" expanded="true" />
@@ -701,9 +727,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="306">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#40#79#0#PHP" expanded="true" />
@@ -713,11 +746,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/features/PurchaseTicketsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="358">
+          <caret line="103" column="62" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="62" />
           <folding>
             <element signature="e#34#69#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_13_192626_create_tickets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/NotEnoughTicketsException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+          <folding>
+            <element signature="e#30#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Concert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#23#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
         </state>
       </provider>
     </entry>
