@@ -3,9 +3,7 @@
 namespace Tests\Unit;
 
 use App\Concert;
-use App\Exceptions\NotEnoughTicketsException;
 use App\Order;
-use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
